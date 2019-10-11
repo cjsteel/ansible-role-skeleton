@@ -81,9 +81,9 @@ install:
 script:
   - if [ "${expectation}" = "fail" ] ; then ! molecule test --scenario-name "${distro}" ; else molecule test --scenario-name "${distro}" ; fi
 
-notifications:
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
-  slack:
-    secure: "# out of `travis encrypt robertdebock:TOKEN-FROM-SLACK`"
-
-  email: false
+#notifications:
+#  webhooks: https://galaxy.ansible.com/api/v1/notifications/
+#  slack:
+#    secure: "# out of `travis encrypt robertdebock:TOKEN-FROM-SLACK`"
+#
+#  email: false
