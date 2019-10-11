@@ -1,5 +1,6 @@
 ---
-# tasks file for {{ role_name }}
+# {{ role_name }}/tasks/main.yml
+
 - name: install requirements
   package:
     name: "{% raw -%}{{{%- endraw %} {{ role_name }}_requirements {%raw -%}}}{%- endraw %}"

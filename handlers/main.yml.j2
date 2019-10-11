@@ -1,5 +1,6 @@
 ---
-# handlers file for {{ role_name }}
+# {{ role_name }}/handlers/main.yml
+
 - name: restart {{ role_name }}
   service:
     name: "{% raw -%}{{{%- endraw %} {{ role_name }}_service {%raw -%}}}{%- endraw %}"
